@@ -16,18 +16,28 @@ const HomeCard = ({ className, img, title, description, handleClick }: HomeCardP
   return (
     <section
       className={cn(
-        'bg-orange-1 px-4 py-6 flex flex-col justify-between w-full xl:max-w-[270px] min-h-[260px] rounded-[14px] cursor-pointer',
+        'bg-gradient-to-br from-brand-orange-500 to-brand-orange-600 px-6 py-8 flex flex-col justify-between w-full xl:max-w-[270px] min-h-[260px] rounded-2xl cursor-pointer transition-all duration-300 hover-lift border border-brand-orange-400/20 shadow-lg hover:shadow-brand-orange-500/25 modern-card group',
         className
       )}
       onClick={handleClick}
     >
-      <div className="flex-center glassmorphism size-12 rounded-[10px]">
-        <Image src={img} alt="meeting" width={27} height={27} />
+      <div className="flex-center size-14 rounded-xl transition-all duration-300 group-hover:scale-110 backdrop-blur-sm bg-gradient-to-br from-brand-orange-500/50 to-brand-orange-600/50 border-2 border-brand-orange-300 shadow-lg shadow-brand-orange-500/40">
+        <Image 
+          src={img} 
+          alt="meeting" 
+          width={28} 
+          height={28}
+          className="transition-all duration-300 filter brightness-200 contrast-150 saturate-150"
+        />
       </div>
       
-      <div className="flex flex-col gap-2">
-        <h1 className="text-2xl font-bold">{title}</h1>
-        <p className="text-lg font-normal">{description}</p>
+      <div className="flex flex-col gap-3">
+        <h1 className="text-2xl font-bold text-white drop-shadow-lg">
+          {title}
+        </h1>
+        <p className="text-lg font-medium text-white/90 drop-shadow-md">
+          {description}
+        </p>
       </div>
     </section>
   );

@@ -11,10 +11,10 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "YOOM",
-  description: "Video calling App",
+  title: "VibeMeet",
+  description: "Modern Video Calling & Collaboration Platform",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/icons/vibemeet-logo.svg",
   },
 };
 
@@ -27,18 +27,22 @@ export default function RootLayout({
         appearance={{
           layout: {
             socialButtonsVariant: "iconButton",
-            logoImageUrl: "/icons/yoom-logo.svg",
+            logoImageUrl: "/icons/vibemeet-logo.svg",
           },
           variables: {
             colorText: "#fff",
-            colorPrimary: "#0E78F9",
-            colorBackground: "#1C1F2E",
-            colorInputBackground: "#252A41",
+            colorPrimary: "#F97316",
+            colorBackground: "#0A0A0A",
+            colorInputBackground: "#1A1A1A",
             colorInputText: "#fff",
+            colorDanger: "#EA580C",
+            colorSuccess: "#F97316",
+            colorWarning: "#FB923C",
+            borderRadius: "12px",
           },
         }}
       >
-        <body className={`${inter.className} bg-dark-2`}>
+        <body className={`${inter.className} bg-brand-black-950 text-white antialiased`}>
           <Toaster />
           {children}
         </body>

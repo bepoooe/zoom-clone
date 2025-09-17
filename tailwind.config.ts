@@ -19,12 +19,56 @@ const config = {
     },
     extend: {
       colors: {
-        dark: {
-          1: '#1C1F2E',
-          2: '#161925',
-          3: '#252A41',
-          4: '#1E2757',
+        // Primary brand colors
+        brand: {
+          orange: {
+            50: '#FFF7ED',
+            100: '#FFEDD5',
+            200: '#FED7AA',
+            300: '#FDBA74',
+            400: '#FB923C',
+            500: '#F97316', // Primary orange
+            600: '#EA580C',
+            700: '#C2410C',
+            800: '#9A3412',
+            900: '#7C2D12',
+            950: '#431407',
+          },
+          black: {
+            50: '#F6F6F6',
+            100: '#E7E7E7',
+            200: '#D1D1D1',
+            300: '#B0B0B0',
+            400: '#888888',
+            500: '#6D6D6D',
+            600: '#5D5D5D',
+            700: '#4F4F4F',
+            800: '#454545',
+            900: '#3D3D3D',
+            950: '#0A0A0A', // Deep black
+          },
         },
+        // Legacy colors for compatibility
+        dark: {
+          1: '#0A0A0A', // Updated to deep black
+          2: '#1A1A1A',
+          3: '#2D2D2D',
+          4: '#404040',
+        },
+        orange: {
+          1: '#F97316', // Primary orange
+          2: '#FB923C',
+          3: '#FDBA74',
+        },
+        accent: {
+          orange: '#F97316',
+          'orange-light': '#FB923C',
+          'orange-dark': '#EA580C',
+          gray: '#6D6D6D',
+          'gray-light': '#B0B0B0',
+          'gray-dark': '#3D3D3D',
+        },
+        // Keep some original colors for backward compatibility
         blue: {
           1: '#0E78F9',
         },
@@ -32,9 +76,6 @@ const config = {
           1: '#C9DDFF',
           2: '#ECF0FF',
           3: '#F5FCFF',
-        },
-        orange: {
-          1: '#FF742E',
         },
         purple: {
           1: '#830EF9',

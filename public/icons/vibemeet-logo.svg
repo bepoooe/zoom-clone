@@ -1,0 +1,22 @@
+<svg width="200" height="75" viewBox="0 0 200 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vibeMeetGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EA580C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- VibeMeet Text -->
+  <text x="50" y="45" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="url(#vibeMeetGradient)">VibeMeet</text>
+  
+  <!-- Camera icon -->
+  <g transform="translate(10, 20)">
+    <rect x="0" y="10" width="30" height="20" rx="5" fill="#0A0A0A" stroke="url(#vibeMeetGradient)" stroke-width="2"/>
+    <circle cx="15" cy="20" r="6" fill="url(#vibeMeetGradient)" stroke="#0A0A0A" stroke-width="1"/>
+    <circle cx="15" cy="20" r="3" fill="#0A0A0A"/>
+    <circle cx="15" cy="20" r="1.5" fill="url(#vibeMeetGradient)"/>
+    <circle cx="25" cy="15" r="2" fill="url(#vibeMeetGradient)"/>
+  </g>
+  
+  <!-- Tagline -->
+  <text x="10" y="65" font-family="Arial, sans-serif" font-size="12" fill="#F97316" opacity="0.8">Modern Video Collaboration</text>
+</svg>
