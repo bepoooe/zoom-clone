@@ -70,33 +70,33 @@ const MeetingTypeList = () => {
   const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetail?.id}`;
 
   return (
-    <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4 animate-fadeInUp">
+    <section className="animate-fadeInUp grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
       <HomeCard
         img="/icons/add-meeting.svg"
         title="New Meeting"
         description="Start an instant meeting"
-        className="bg-gradient-to-br from-brand-orange-500 to-brand-orange-600 hover:from-brand-orange-400 hover:to-brand-orange-500 shadow-xl hover:shadow-2xl transition-all duration-300"
+        className="bg-gradient-to-br from-brand-orange-500 to-brand-orange-600 shadow-xl transition-all duration-300 hover:from-brand-orange-400 hover:to-brand-orange-500 hover:shadow-2xl"
         handleClick={() => setMeetingState('isInstantMeeting')}
       />
       <HomeCard
         img="/icons/join-meeting.svg"
         title="Join Meeting"
         description="via invitation link"
-        className="bg-gradient-to-br from-brand-black-700 to-brand-black-800 border-2 border-brand-orange-500 hover:border-brand-orange-400 text-white shadow-xl hover:shadow-2xl transition-all duration-300"
+        className="border-2 border-brand-orange-500 bg-gradient-to-br from-brand-black-700 to-brand-black-800 text-white shadow-xl transition-all duration-300 hover:border-brand-orange-400 hover:shadow-2xl"
         handleClick={() => setMeetingState('isJoiningMeeting')}
       />
       <HomeCard
         img="/icons/schedule.svg"
         title="Schedule Meeting"
         description="Plan your meeting"
-        className="bg-gradient-to-br from-brand-orange-600 to-brand-orange-700 hover:from-brand-orange-500 hover:to-brand-orange-600 shadow-xl hover:shadow-2xl transition-all duration-300"
+        className="bg-gradient-to-br from-brand-orange-600 to-brand-orange-700 shadow-xl transition-all duration-300 hover:from-brand-orange-500 hover:to-brand-orange-600 hover:shadow-2xl"
         handleClick={() => setMeetingState('isScheduleMeeting')}
       />
       <HomeCard
         img="/icons/recordings.svg"
         title="View Recordings"
         description="Meeting Recordings"
-        className="bg-gradient-to-br from-brand-black-600 to-brand-black-700 border-2 border-brand-orange-400 hover:border-brand-orange-300 text-white shadow-xl hover:shadow-2xl transition-all duration-300"
+        className="border-2 border-brand-orange-400 bg-gradient-to-br from-brand-black-600 to-brand-black-700 text-white shadow-xl transition-all duration-300 hover:border-brand-orange-300 hover:shadow-2xl"
         handleClick={() => router.push('/recordings')}
       />
 
@@ -112,7 +112,7 @@ const MeetingTypeList = () => {
               Add a description
             </label>
             <Textarea
-              className="border border-brand-black-700 bg-brand-black-800 text-white focus-visible:ring-2 focus-visible:ring-brand-orange-500 focus-visible:ring-offset-0 modern-input"
+              className="modern-input border border-brand-black-700 bg-brand-black-800 text-white focus-visible:ring-2 focus-visible:ring-brand-orange-500 focus-visible:ring-offset-0"
               onChange={(e) =>
                 setValues({ ...values, description: e.target.value })
               }
@@ -130,7 +130,7 @@ const MeetingTypeList = () => {
               timeIntervals={15}
               timeCaption="time"
               dateFormat="MMMM d, yyyy h:mm aa"
-              className="w-full rounded-xl bg-brand-black-800 border border-brand-black-700 p-3 focus:outline-none focus:border-brand-orange-500 text-white modern-input"
+              className="modern-input w-full rounded-xl border border-brand-black-700 bg-brand-black-800 p-3 text-white focus:border-brand-orange-500 focus:outline-none"
             />
           </div>
         </MeetingModal>
@@ -161,7 +161,7 @@ const MeetingTypeList = () => {
         <Input
           placeholder="Meeting link"
           onChange={(e) => setValues({ ...values, link: e.target.value })}
-          className="border border-brand-black-700 bg-brand-black-800 text-white focus-visible:ring-2 focus-visible:ring-brand-orange-500 focus-visible:ring-offset-0 modern-input"
+          className="modern-input border border-brand-black-700 bg-brand-black-800 text-white focus-visible:ring-2 focus-visible:ring-brand-orange-500 focus-visible:ring-offset-0"
         />
       </MeetingModal>
 

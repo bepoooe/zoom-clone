@@ -21,13 +21,13 @@ const HomeCard = ({ className, img, title, description, handleClick }: HomeCardP
       )}
       onClick={handleClick}
     >
-      <div className="flex-center size-14 rounded-xl transition-all duration-300 group-hover:scale-110 backdrop-blur-sm bg-gradient-to-br from-brand-orange-500/50 to-brand-orange-600/50 border-2 border-brand-orange-300 shadow-lg shadow-brand-orange-500/40">
+      <div className="flex-center size-14 rounded-xl border-2 border-brand-orange-300 bg-gradient-to-br from-brand-orange-500/50 to-brand-orange-600/50 shadow-lg shadow-brand-orange-500/40 backdrop-blur-sm transition-all duration-300 group-hover:scale-110">
         <Image 
           src={img} 
           alt="meeting" 
           width={28} 
           height={28}
-          className="transition-all duration-300 filter brightness-200 contrast-150 saturate-150"
+          className="brightness-200 contrast-150 saturate-150 transition-all duration-300"
         />
       </div>
       

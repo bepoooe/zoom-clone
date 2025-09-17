@@ -31,10 +31,10 @@ const MeetingCard = ({
   const { toast } = useToast();
 
   return (
-    <section className="flex min-h-[258px] w-full flex-col justify-between rounded-2xl bg-gradient-to-br from-brand-black-800 to-brand-black-900 border border-brand-orange-500/20 px-5 py-8 xl:max-w-[568px] shadow-lg hover:shadow-brand-orange-500/25 transition-all duration-300 modern-card">
+    <section className="modern-card flex min-h-[258px] w-full flex-col justify-between rounded-2xl border border-brand-orange-500/20 bg-gradient-to-br from-brand-black-800 to-brand-black-900 px-5 py-8 shadow-lg transition-all duration-300 hover:shadow-brand-orange-500/25 xl:max-w-[568px]">
       <article className="flex flex-col gap-5">
-        <div className="flex-center size-12 rounded-xl bg-brand-orange-500/20 border border-brand-orange-400/30 backdrop-blur-sm">
-          <Image src={icon} alt="upcoming" width={28} height={28} className="filter brightness-150" />
+        <div className="flex-center size-12 rounded-xl border border-brand-orange-400/30 bg-brand-orange-500/20 backdrop-blur-sm">
+          <Image src={icon} alt="upcoming" width={28} height={28} className="brightness-150" />
         </div>
         <div className="flex justify-between">
           <div className="flex flex-col gap-2">
@@ -56,13 +56,13 @@ const MeetingCard = ({
               style={{ top: 0, left: index * 28 }}
             />
           ))}
-          <div className="flex-center absolute left-[136px] size-10 rounded-full border-[5px] border-brand-orange-500/30 bg-brand-black-700 text-brand-orange-300 font-bold">
+          <div className="flex-center absolute left-[136px] size-10 rounded-full border-[5px] border-brand-orange-500/30 bg-brand-black-700 font-bold text-brand-orange-300">
             +5
           </div>
         </div>
         {!isPreviousMeeting && (
           <div className="flex gap-2">
-            <Button onClick={handleClick} className="rounded-xl bg-gradient-to-r from-brand-orange-500 to-brand-orange-600 hover:from-brand-orange-400 hover:to-brand-orange-500 px-6 border-none shadow-lg hover:shadow-xl transition-all duration-300">
+            <Button onClick={handleClick} className="border-none rounded-xl bg-gradient-to-r from-brand-orange-500 to-brand-orange-600 px-6 shadow-lg transition-all duration-300 hover:from-brand-orange-400 hover:to-brand-orange-500 hover:shadow-xl">
               {buttonIcon1 && (
                 <Image src={buttonIcon1} alt="feature" width={20} height={20} />
               )}
@@ -75,14 +75,14 @@ const MeetingCard = ({
                   title: "Link Copied",
                 });
               }}
-              className="bg-brand-black-700 hover:bg-brand-black-600 border border-brand-orange-500/30 hover:border-brand-orange-400/50 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="rounded-xl border border-brand-orange-500/30 bg-brand-black-700 px-6 shadow-lg transition-all duration-300 hover:border-brand-orange-400/50 hover:bg-brand-black-600 hover:shadow-xl"
             >
               <Image
                 src="/icons/copy.svg"
                 alt="feature"
                 width={20}
                 height={20}
-                className="filter brightness-150"
+                className="brightness-150"
               />
               &nbsp; Copy Link
             </Button>

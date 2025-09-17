@@ -8,17 +8,17 @@ const Home = () => {
 
   return (
     <section className="flex size-full flex-col gap-8 text-white">
-      <div className="h-[303px] w-full rounded-3xl bg-gradient-to-br from-brand-black-800 via-brand-black-700 to-brand-black-900 border border-brand-orange-500/30 shadow-2xl overflow-hidden relative">
+      <div className="relative h-[303px] w-full overflow-hidden rounded-3xl border border-brand-orange-500/30 bg-gradient-to-br from-brand-black-800 via-brand-black-700 to-brand-black-900 shadow-2xl">
         {/* Background pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-brand-orange-500/10 to-transparent"></div>
-        <div className="absolute top-4 right-4 w-32 h-32 bg-brand-orange-500/15 rounded-full blur-3xl"></div>
+        <div className="absolute top-4 right-4 size-32 rounded-full bg-brand-orange-500/15 blur-3xl"></div>
         
-        <div className="flex h-full flex-col justify-center max-md:px-6 max-md:py-8 lg:p-11 relative z-10">
+        <div className="relative z-10 flex h-full flex-col justify-center max-md:px-6 max-md:py-8 lg:p-11">
           <div className="flex flex-col gap-3">
-            <h1 className="text-4xl font-bold lg:text-7xl bg-gradient-to-r from-white via-brand-orange-200 to-brand-orange-300 bg-clip-text text-transparent drop-shadow-lg animate-fadeInUp">
+            <h1 className="animate-fadeInUp bg-gradient-to-r from-white via-brand-orange-200 to-brand-orange-300 bg-clip-text text-4xl font-bold text-transparent drop-shadow-lg lg:text-7xl">
               {time}
             </h1>
-            <p className="text-lg font-medium text-brand-orange-200 lg:text-2xl opacity-90 animate-slideInRight">
+            <p className="animate-slideInRight text-lg font-medium text-brand-orange-200 opacity-90 lg:text-2xl">
               {date}
             </p>
           </div>

@@ -15,7 +15,7 @@ const MobileNav = () => {
     <section className="w-full max-w-[264px]">
       <Sheet>
         <SheetTrigger asChild>
-          <div className="p-2 rounded-lg hover:bg-brand-black-800 transition-colors duration-300">
+          <div className="rounded-lg p-2 transition-colors duration-300 hover:bg-brand-black-800">
             <Image
               src="/icons/hamburger.svg"
               width={36}
@@ -27,7 +27,7 @@ const MobileNav = () => {
         </SheetTrigger>
         <SheetContent side="left" className="border-r-2 border-brand-orange-500/30 bg-gradient-to-b from-brand-black-950 to-brand-black-900 backdrop-blur-lg">
           <Link href="/" className="flex items-center gap-1">
-            <p className="text-[26px] font-extrabold bg-gradient-to-r from-brand-orange-500 to-brand-orange-300 bg-clip-text text-transparent">
+            <p className="bg-gradient-to-r from-brand-orange-500 to-brand-orange-300 bg-clip-text text-[26px] font-extrabold text-transparent">
               VibeMeet
             </p>
           </Link>
