@@ -6,12 +6,12 @@ A feature-rich video conferencing application built with Next.js, Stream, and Cl
 
 ## Features
 
-- 🎥 High-quality video calling
-- 👥 Meeting rooms and scheduling
-- 📹 Recording capabilities
-- 🔐 Secure authentication
-- 📱 Mobile responsive design
-- 🎨 Modern orange & black theme
+- High-quality video calling
+- Meeting rooms and scheduling
+- Recording capabilities
+- Secure authentication
+- Mobile responsive design
+- Modern orange & black theme
 
 ## Tech Stack
 
